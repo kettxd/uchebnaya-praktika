@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Клубим</title>
+  </head>
+  <body>
+    <header>
+      <p>Учебный сайт студента ИС-1-25</p>
+      <nav aria-label="Главное меню">
+        <ul>
+          <li><a href="about-me/index.html">О нас</a></li>
+          <li><a href="about-me/hobby.html">Наши увлечения</a></li>
+          <li><a href="about-me/college.html">Наш колледж</a></li>
+          <li><a href="about-me/season.html">любимое время года</a></li>
+          <li><a href="about-me/schedule.html">Расписание</a></li>
+          <li><a href="about-me/application.html">заявка</a></li>
+          <li><a href="about-me/comedy-club.html">клуб</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Клуб анонимных воздуханов</h1>
+      <section aria-labelledby="club">
+        <h2 id="club">О клубе</h2>
+        <p>Крутой стендап клуб с юмором лучше чем у Гарика Харламова</p>
+      </section>
+      <article>
+        <h2>Новость клуба</h2>
+        <p>Сегодня выступлений не будет</p>
+      </article>
+      <table>
+        <caption>
+          таблица встреч
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">день</th>
+            <th scope="col">тема</th>
+            <th scope="col">кабинет</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th  scope="rowgroup">понедельник</th>
+            <td>жизнь</td>
+            <td>актовый зал</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <th  scope="rowgroup">среда</th>
+            <td>деньги</td>
+            <td>актовый зал</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <th  scope="rowgroup">суббота</th>
+            <td>здоровье</td>
+            <td>актовый зал</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Заявка на вступление в клуб</h2>
+      <p>Данные вымышленны и не сохраняются</p>
+      <form action="comedy-club.html" method="GET">
+        <p>
+          <label for="student">Имя</label>
+          <input
+            id="student"
+            name="student"
+            type="text"
+            minlength="2"
+            required
+          />
+        </p>
+        <p>
+          <label for="topic">Пол</label>
+          <select id="topic" name="topic" required>
+            <option value="">Выберите пол</option>
+            <option value="html">женский</option>
+            <option value="git">мужской</option>
+          </select>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </main>
+    <footer>
+      <p>
+        Авторы: Лебедев антон и григорьев александр. Учебная практика УП. 09.
+      </p>
+    </footer>
+  </body>
+</html>

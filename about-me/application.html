@@ -1,66 +1,119 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>учебная заявка Лебедев Антон и Григорьев Саня</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li><a href="index.html">О нас</a></li>
-            <li><a href="hobby.html">Наши увлечения</a></li>
-            <li><a href="college.html">Наш колледж</a></li>
-            <li><a href="season.html">любимое время года</a></li>
-            <li><a href="schedule.html">Расписание</a></li>
-            <li><a href="application.html">заявка</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">О нас</a></li>
+        <li><a href="hobby.html">Наши увлечения</a></li>
+        <li><a href="college.html">Наш колледж</a></li>
+        <li><a href="season.html">любимое время года</a></li>
+        <li><a href="schedule.html">Расписание</a></li>
+        <li><a href="application.html">заявка</a></li>
+      </ul>
     </nav>
-<h1>Заявка на учебный кружок</h1>
-<a>Это учебная форма. Вводите вымышленные данные. Заявка не сохраняется и не поступает организатору</a>
-<form action="application.html" method="get">
-<p>
-    <label for="student">Учебное имя</label>
-    <input id="student" name="student" type="text" minlength="2" required>
-</p>
-<p>
-    <label for="email">Учебная почта</label>
-    <input id="email" name="email" type="email" placeholder="student@example.com" required>
-</p>
-<p>
-    <label for="phone">Телефон из 11 цифр</label>
-    <input id="phone" name="phone" type="tel" pattern="[0-9]{11}" required aria-describedby="phone-help">
-    <small id="phone-help">Без пробелов и знака плюс</small>
-</p>
-<p>
-    <label for="date">Желаемая дата занятия</label>
-    <input id="date" name="date" type="date" required>
-</p>
-<fieldset>
-    <legend>формат занятий</legend>
-    <p><input id="offline" type="radio" name="format" value="offline" required>
-    <label for="offline">В колледже</label></p>
-    <p><input id="online" type="radio" name="format" value="online">
-    <label for="online">Дистанционно</label></p>
-</fieldset>
-<p>
-    <label for="topic">направление</label>
-    <select id="topic" name="topic" required>
-        <option value="">Выберите направление</option>
-        <option value="html">HTML</option>
-        <option value="git">Git</option>
-        <option value="java">Java</option>
-    </select>
-</p>
-<p>
-    <input id="reminder" name="reminder" type="checkbox" value="yes">
-    <label for="reminder">Добавить учебное напоминаие</label>
-</p>
+    <main>
+      <h1>Заявка на учебный кружок</h1>
+      <a
+        >Это учебная форма. Вводите вымышленные данные. Заявка не сохраняется и
+        не поступает организатору</a
+      >
+      <form action="application.html" method="get">
+        <p>
+          <label for="student">Учебное имя</label>
+          <input
+            id="student"
+            name="student"
+            type="text"
+            minlength="2"
+            required
+          />
+        </p>
+        <p>
+          <label for="email">Учебная почта</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="student@example.com"
+            required
+          />
+        </p>
+        <p>
+          <label for="password">пароль</label>
+          <input
+            id="password"
+            name="password"
+            type="text"
+            minlength="8"
+            pattern="[A-Za-z0-9]+"
+            required
+          />
+        </p>
+        <p>
+          <label for="phone">Телефон из 11 цифр</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            pattern="[0-9]{11}"
+            required
+            aria-describedby="phone-help"
+          />
+          <small id="phone-help">Без пробелов и знака плюс</small>
+        </p>
+        <p>
+          <label for="date">Желаемая дата занятия</label>
+          <input id="date" name="date" type="date" required />
+        </p>
+        <fieldset>
+          <legend>формат занятий</legend>
+          <p>
+            <input
+              id="offline"
+              type="radio"
+              name="format"
+              value="offline"
+              required
+            />
+            <label for="offline">В колледже</label>
+          </p>
+          <p>
+            <input id="online" type="radio" name="format" value="online" />
+            <label for="online">Дистанционно</label>
+          </p>
+        </fieldset>
+        <p>
+          <label for="topic">направление</label>
+          <select id="topic" name="topic" required>
+            <option value="">Выберите направление</option>
+            <option value="html">HTML</option>
+            <option value="git">Git</option>
+            <option value="java">Java</option>
+          </select>
+        </p>
+        <p>
+          <input id="reminder" name="reminder" type="checkbox" value="yes" />
+          <label for="reminder">Добавить учебное напоминаие</label>
+        </p>
 
-<p>
-    <label for="comment">Чему хотите научиться</label>
-    <textarea id="comment" name="comment" rows="4" maxlength="300" required></textarea>
-</p>
-<button type="submit">Отправить учебный пример</button>
-<button type="reset">Сбросить поля</button>
-</form>
+        <p>
+          <label for="comment">Чему хотите научиться</label>
+          <textarea
+            id="comment"
+            name="comment"
+            rows="4"
+            maxlength="300"
+            required
+          ></textarea>
+        </p>
+        <button type="submit">Отправить учебный пример</button>
+        <button type="reset">Сбросить поля</button>
+      </form>
+    </main>
+  </body>
+</html>

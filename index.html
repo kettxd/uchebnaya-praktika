@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя первая страница</title>
-</head>
-<body>
-    <h1>Версия из ветки main</h1>
-    <p>Лебедев Антон и Григорьев Саня, группа ИС-1-25</p>
-    <p>я изучаю веб-разработку</p>
-    <p>Это ветка design</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Наша первая страница</title>
+  </head>
+  <body>
+    <header>
+      <p>Учебный сайт студентов ИС-1-25</p>
+      <nav aria-label="Главное меню">
+        <ul>
+          <li><a href="about-me/index.html">О нас</a></li>
+          <li><a href="about-me/hobby.html">Наши увлечения</a></li>
+          <li><a href="about-me/college.html">Наш колледж</a></li>
+          <li><a href="about-me/season.html">любимое время года</a></li>
+          <li><a href="about-me/schedule.html">Расписание</a></li>
+          <li><a href="about-me/application.html">заявка</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 id="top">Обо мне</h1>
+      <p>Мы <strong>хотим</strong> вкусно и точка <em>понимаете</em>?!!</p>
+      <section aria-labelledby="about">
+        <h2 id="about">Кто я</h2>
+        <img src="about-me/img/me.jfif" alt="Фотография: тупо ч" width="300" />
+      </section>
+      <section aria-labelledby="study">
+        <h2 id="study">Наша учеба</h2>
+        <p>Мы изучаем программировние и <em>создание</em> сайтов.</p>
+      </section>
+      <h2 id="plans">Наши планы</h2>
+      <p>
+        Стать <strong>крутым</strong> трай хардером и писать все в
+        ручную(<del>клодом</del>).
+      </p>
+      <p>Город: Чебупиццы<br />Группа: ИС-1-25</p>
+      <h2>Любимая цитата</h2>
+      <blockquote>
+        <p>
+          Экономическая анархия капитализма - есть
+          <strong>корень истинного зла</strong>
+        </p>
+      </blockquote>
+      <p>эйнпштейн.</p>
+      <h2>Полезные ссылки</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/ru/docs/Web/HTML"
+            target="_blank"
+            rel="noopener noreferrer"
+            >справочник MDN по HTML</a
+          >
+        </li>
+        <li>
+          <a href="https://chetk.info" target="_blank" rel="noopener noreferrer"
+            >сайт колледжа</a
+          >
+        </li>
+        <li><a href="mailto:burmalda42@gmail.com">написать мне письмо</a></li>
+        <li>
+          <a
+            href="https://www.roblox.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ура роблокс</a
+          >
+        </li>
+      </ul>
+      <p><a href="#top">Наверх</a></p>
+    </main>
+    <footer>
+      <p>
+        Авторы: Лебедев антон и григорьев александр. Учебная практика УП. 09.
+      </p>
+    </footer>
+  </body>
 </html>
