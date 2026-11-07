@@ -1,14 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 html {
   font-size: 16px;
 }
 body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   color: #1f2d22;
   background-color: #f4f7f4;
 }
-h1, h2, h3 {
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+header,
+main,
+footer {
+  width: min(100% - 2rem, 70rem);
+  margin-inline: auto;
+}
+main {
+  padding-block: 2rem;
+}
+section {
+  margin-block: 2rem;
+}
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+figure {
+  margin-top: 0;
+}
+h1,
+h2,
+h3 {
   font-family: Arial, Helvetica, sans-serif;
   color: #14452f;
 }
@@ -27,7 +61,8 @@ h3 {
 #top {
   letter-spacing: 0.03em;
 }
-p, li {
+p,
+li {
   max-width: 70ch;
 }
 .lead {
@@ -53,19 +88,95 @@ a:focus-visible {
   outline: 3px solid #c27803;
   outline-offset: 3px;
 }
-caption,
-legend,
-figcaption {
-  font-weight: bold;
-  font-size: 0.95rem;
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 1rem 0;
+  list-style: none;
+}
+.main-nav a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #a3b8aa;
+  border-radius: 0.35rem;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #2d6a4f;
+}
+.main-nav a:hover {
+  background-color: #eaf1eb;
+  color: #8f5b34;
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+.card {
+  flex: 1 1 15rem;
+  padding: 1rem;
+  border: 1px solid #b7c9bd;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-block: 1rem;
+}
+th,
+td {
+  padding: 0.65rem;
+  border: 1px solid #b7c9bd;
+  text-align: left;
+}
+th {
+  background-color: #e2ede4;
   color: #14452f;
+}
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  max-width: 32rem;
+  padding: 0.55rem;
+  border: 1px solid #738a79;
+  border-radius: 0.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  display: block;
+  background-color: #ffffff;
+  color: #1f2d22;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+}
+button {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  background-color: #1b4d3e;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.25rem;
+}
+button:hover {
+  background-color: #14452f;
 }
 .page-footer {
   font-size: 0.9rem;
-}
-.page-footer p {
-  color: #1f2d22;
-}
-.external-link {
-  color: #40916c;
+  border-top: 1px solid #b7c9bd;
+  padding-block: 1.5rem;
 }
