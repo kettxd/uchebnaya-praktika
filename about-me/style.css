@@ -1,0 +1,35 @@
+
+ody {
+  color: #1f2d22;
+  background-color: #f2f7f2;
+}
+p {
+  color: #2b3a2e;
+}
+h1, h2 {
+  color: #14452f;
+}
+.site-note {
+  font-style: italic;
+  color: #3b5240;
+}
+#top {
+  letter-spacing: 0.03em;
+}
+.main-nav a {
+  color: #2d6a4f;
+}
+.main-nav a:hover {
+  color: #8f5b34;
+}
+.main-nav a:focus,
+.main-nav a:focus-visible {
+  outline: 2px solid #52796f;
+  outline-offset: 3px;
+}
+.page-footer p {
+  color: #1f2d22;
+}
+.external-link {
+  color: #40916c;
+}
