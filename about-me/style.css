@@ -264,7 +264,7 @@ button:hover {
 }
 .grid-demo {
   display: grid;
-  grid-template-columns: repeat(1, 2fr);
+  grid-template-columns: repeat(2, 3fr);
   gap: 0.75rem;
   padding: 1rem;
   border: 1px solid #9fb3c8
@@ -273,9 +273,6 @@ button:hover {
   padding: 1rem;
   border: 1px solid #6f8498
 }
-.grid-item-total { 
-  grid-column: 1 / -1; 
-  }
 .area-demo {
   display: grid;
   grid-template-columns: 2fr 1fr;
