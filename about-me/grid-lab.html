@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID LAB</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav" aria-label="Главное меню">
+            <ul>
+                <li><a href="index.html">О нас</a></li>
+          <li><a href="hobby.html">Наши увлечения</a></li>
+          <li><a href="college.html">Наш колледж</a></li>
+          <li><a href="season.html">любимое время года</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="application.html">заявка</a></li>
+          <li><a href="comedy-club.html">клуб</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h1>CSS GRID LAB</h1>
+        
+        <img src="img/tarxun.webp" alt="Фотография: наши достижения" width="300" />
+
+        <p class="lead">На этой странице исследуется построение двумерных сеток с помощью CSS Grid.
+        </p>
+
+        <section>
+            <h2>Учебная сетка</h2>
+            <p>Сетка содержит три столбца и шесть элементов.Последний элемент занимает всю ширину сетки.</p>
+            <div class="grid-demo">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item grid-item-total">6</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Именованные области</h2>
+
+            <div class="area-demo">
+                <header class="area-head">
+                    <h3>Заголовок учебной области</h3>
+                    <p>Этот блок занимает всю верхнюю строку сетки.</p>
+                </header>
+
+                <div class="area-main">
+                    <h3>Основное содержимое</h3>
+                    <p>Основная область занимает две доли  свободного пространства.</p>
+
+                    <p>Здесь может находиться описание лабораторной работы или учебный материал.</p>
+                </div>
+                <aside class="area-side">
+                    <h3>Доплнительная область</h3>
+                    <p>Боковой блок занимает одну долю свободного пространства.</p>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <p>
+          Авторы: Лебедев Антон и Григорьев Александр. Учебная практика УП. 09.
+        </p>
+      </footer>
+</body>
+</html>

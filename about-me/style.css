@@ -109,6 +109,10 @@ a:focus-visible {
   background-color: #eaf1eb;
   color: #8f5b34;
 }
+.main-nav a:focus-visible {
+  outline: 3px solid #d08a00;
+  outline-offset: 2px;
+}
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -179,4 +183,146 @@ button:hover {
   font-size: 0.9rem;
   border-top: 1px solid #b7c9bd;
   padding-block: 1.5rem;
+}
+.flex-demo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: 10rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid #9fb3c8;
+}
+.flex-item {
+  flex: 1 1 10rem;
+  padding: 0.75rem;
+  border: 1px solid #6f8498;
+  background-color: #eef4f8;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #9fb3c8;
+  background-color: #f7fafc;
+}
+.actions-status {
+  margin: 0;
+}
+.actions-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem
+}
+.button-link,
+.actions button {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border: 1px solid #6f8498;
+  border-radius: 0.35rem;
+  background-color: #eef4f8;
+  color: #17365d; 
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.profile-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #9fb3c8;
+  border-radius: 0.5rem;
+}
+.profile-avatar {
+  width: 8rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+.profile-text {
+  flex: 1 1 16rem;
+}
+.profile-text h3 {
+  margin-top: 0;
+}
+.profile-link{
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border: 1px solid #6f8498;
+  border-radius: 0.35rem;
+}
+.grid-demo {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid #9fb3c8
+}
+.grid-item {
+  padding: 1rem;
+  border: 1px solid #6f8498
+}
+.grid-item-total { 
+  grid-column: 1 / -1; 
+  }
+.area-demo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "head head"
+    "main side";
+  gap: 1rem;
+}
+.area-head { grid-area: head; }
+.area-main { grid-area: main; }
+.area-side { grid-area: side; }
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(14rem,1fr));
+  gap: 1rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid #c9d3dd;
+  border-radius: 0.5rem;
+
+  background-color: #ffffff;
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  margin-bottom: 1rem;
+
+  border-radius: 0.35rem;
+}
+
+.product-card h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.product-card p {
+  margin-bottom: 0.75rem;
+}
+
+.product-card ul {
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
 }
