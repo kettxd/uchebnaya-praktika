@@ -484,12 +484,14 @@ img { max-width: 100%; height: auto; }
 .form-grid {
   display: grid;
   gap: 1rem;
+  flex-direction: column;
 }
 
 .form-field {
   display: grid;
   gap: 0.35rem;
   min-width: 0;
+  align-items: flex-start;
 }
 
 .form-field label,
@@ -497,8 +499,10 @@ img { max-width: 100%; height: auto; }
   font-weight: 700;
 }
 
-.form-field small {
-  color: #465766;
+.form-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .study-form input:not([type="radio"]):not([type="checkbox"]),
@@ -519,6 +523,7 @@ img { max-width: 100%; height: auto; }
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 1rem;
+  justify-content: center;
 }
 
 .study-form button {
