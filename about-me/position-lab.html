@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>POSITION LAB</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="main-nav" aria-label="Главное меню">
-            <ul>
-                <li><a href="index.html">О нас</a></li>
+      <nav class="main-nav" aria-label="Главное меню">
+        <ul>
+          <li><a href="index.html">О нас</a></li>
           <li><a href="hobby.html">Наши увлечения</a></li>
           <li><a href="college.html">Наш колледж</a></li>
           <li><a href="season.html">любимое время года</a></li>
@@ -22,44 +22,76 @@
           <li><a href="flex-lab.html">лаборатория lexbox</a></li>
           <li><a href="position-lab.html">лаборатория позционирования</a></li>
           <li><a href="responsive-lab.html">лаборатория адаптивности</a></li>
-            <li><a href="form-style-lab.html">лаборатория форм стиля</a></li>
-            <li><a href="project.html" aria-current="page">Проект</a></li>
-            </ul>
-        </nav>
+          <li><a href="form-style-lab.html">лаборатория форм стиля</a></li>
+          <li><a href="project.html" aria-current="page">Проект</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main id="top">
-        <h1>Лаборатория позиционирования</h1>
-        <p class="lead">Исследуем relative, absolute и sticky.</p>
-        <div class="page-tools">
+      <h1>Лаборатория позиционирования</h1>
+      <p class="lead">Исследуем relative, absolute и sticky.</p>
+      <div class="page-tools"></div>
+
+      <nav class="page-tools main-nav" aria-label="Навишгация по лаборатнорной">
+        <a href="#relative-demo">relative and absolut</a>
+        <a href="#sticky-demo">Sticky</a>
+        <a href="#top">Наверх</a>
+      </nav>
+      <section id="relative-demo">
+        <h2>Relative и absolute</h2>
+        <div class="position-box">
+          <span class="badge">Новинка</span>
+          <h3>Учебная карточка</h3>
+          <p>Значок размещён относительно этой карточки.</p>
         </div>
+      </section>
 
-        <nav class="page-tools main-nav"  aria-label="Навишгация по лаборатнорной">
-            <a href="#relative-demo">relative and absolut</a>
-            <a href="#sticky-demo">Sticky</a>
-            <a href="#top">Наверх</a>
-        </nav>
-        <section id="relative-demo">
-            <h2>Relative и absolute</h2>
-            <div class="position-box">
-                <span class="badge">Новинка</span>
-                <h3>Учебная карточка</h3>
-                <p>Значок размещён относительно этой карточки.</p>
-            </div>
-        </section>
-
-        <section id="sticky-demo" class="long-text">
-            <h2>Проверка прокрутки</h2>
-            <p>Уменьшите высоту окна и прокрутите страницу.</p>
-            <p>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>бэм бэм бэм<br> цем цем цем<br> чем чем чем<br>
-            </p>
-        </section>
+      <section id="sticky-demo" class="long-text">
+        <h2>Проверка прокрутки</h2>
+        <p>Уменьшите высоту окна и прокрутите страницу.</p>
+        <p>
+          бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />бэм бэм бэм<br />
+          цем цем цем<br />
+          чем чем чем<br />
+        </p>
+      </section>
     </main>
 
     <footer class="page-footer">
-        <p>
-          Авторы: Лебедев Антон и Григорьев Александр. Учебная практика УП. 09.
-        </p>
-      </footer>
-</body>
+      <p>
+        Авторы: Лебедев Антон и Григорьев Александр. Учебная практика УП. 09.
+      </p>
+    </footer>
+  </body>
 </html>

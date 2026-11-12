@@ -1,112 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>styleform</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <p>Учебный сайт студента ИС-1-25</p>
-    <nav aria-label="Главное меню" class="main-nav">
-      <ul>
-        <li><a href="index.html">О нас</a></li>
-        <li><a href="hobby.html">Наши увлечения</a></li>
-        <li><a href="college.html">Наш колледж</a></li>
-        <li><a href="season.html">любимое время года</a></li>
-        <li><a href="schedule.html">Расписание</a></li>
-        <li><a href="application.html">заявка</a></li>
-        <li><a href="comedy-club.html">клуб</a></li>
-        <li><a href="catalog.html">каталог</a></li>
-        <li><a href="grid-lab.html">CSS GRID LAB</a></li>
-        <li><a href="flex-lab.html">лаборатория lexbox</a></li>
-        <li><a href="position-lab.html">лаборатория позционирования</a></li>
-        <li><a href="responsive-lab.html">лаборатория адаптивности</a></li>
-            <li><a href="form-style-lab.html">лаборатория форм стиля</a></li>
-            <li><a href="project.html" aria-current="page">Проект</a></li>
-      </ul>
-    </nav>
-  </header>
+  </head>
+  <body>
+    <header>
+      <p>Учебный сайт студента ИС-1-25</p>
+      <nav aria-label="Главное меню" class="main-nav">
+        <ul>
+          <li><a href="index.html">О нас</a></li>
+          <li><a href="hobby.html">Наши увлечения</a></li>
+          <li><a href="college.html">Наш колледж</a></li>
+          <li><a href="season.html">любимое время года</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="application.html">заявка</a></li>
+          <li><a href="comedy-club.html">клуб</a></li>
+          <li><a href="catalog.html">каталог</a></li>
+          <li><a href="grid-lab.html">CSS GRID LAB</a></li>
+          <li><a href="flex-lab.html">лаборатория lexbox</a></li>
+          <li><a href="position-lab.html">лаборатория позционирования</a></li>
+          <li><a href="responsive-lab.html">лаборатория адаптивности</a></li>
+          <li><a href="form-style-lab.html">лаборатория форм стиля</a></li>
+          <li><a href="project.html" aria-current="page">Проект</a></li>
+        </ul>
+      </nav>
+    </header>
     <main class="page-container">
-        <h1 class="form-actions">Заявка на оплату налогов
-        </h1>
-        <p id="form-actions">Поля со звёздочкой обязательны.</p>
-      
-        <form class="study-form" action="#" method="post" aria-describedby="form-help">
-          <div class="form-grid">
-            <div class="form-field">
-              <label for="student-name">пасспортные данные *</label>
-              <input id="student-name" name="student-name" type="text" required autocomplete="name">
-            </div>
-      
-            <div class="form-field">
-              <label for="student-email">Электронная почта *</label>
-              <input id="student-email" name="student-email" type="email" required autocomplete="email" placeholder="ZOV@example.ru">
-              
-            </div>
-      
-            <div class="form-field form-field--wide">
-              <label for="course">Направление *</label>
-              <select id="course" name="course" required>
-                <option value="">Выберите куда депать</option>
-                <option value="html">за мелстроя</option>
-                <option value="git">за клодика любимого</option>
-                <option value="project">контракт</option>
-              </select>
-            </div>
-      
-            <fieldset class="form-field form-field--wide">
-              <legend>Формат участия</legend>
-              <label class="choice"><input type="radio" name="format" value="class" checked> военкомат</label>
-              <label class="choice"><input type="radio" name="format" value="online"> госуслуги\макс</label>
-            </fieldset>
-            <fieldset class="form-field form-field--wide">
-              <legend>Уровень подготовки</legend>
-              <label class="choice"><input type="radio" name="level" value="beginner" checked> навальный</label>
-              <label class="choice"><input type="radio" name="level" value="intermediate"> +аура комикон</label>
-              <label class="choice"><input type="radio" name="level" value="advanced"> движуха</label>
-            </fieldset>
-            
-            
-            <div class="form-field">
-              <label for="start-date">Дата срока *</label>
-              
-              <input id="start-date" name="start-date" type="date" required>
-            </div>
-            
-            
-            <div class="form-field form-field--wide">
-              <label class="choice agreement">
-                <input type="checkbox" name="reminders">
-                Я хочу получать повестку на почту
-              </label>
-            </div>
-            <div class="form-field form-field--wide">
-              <label for="comment">Комментарий</label>
-              <textarea id="comment" name="comment" rows="5" maxlength="500"></textarea>
-            </div>
-      
+      <h1 class="form-actions">Заявка на оплату налогов</h1>
+      <p id="form-actions">Поля со звёздочкой обязательны.</p>
+
+      <form
+        class="study-form"
+        action="#"
+        method="post"
+        aria-describedby="form-help"
+      >
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="student-name">пасспортные данные *</label>
+            <input
+              id="student-name"
+              name="student-name"
+              type="text"
+              required
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="student-email">Электронная почта *</label>
+            <input
+              id="student-email"
+              name="student-email"
+              type="email"
+              required
+              autocomplete="email"
+              placeholder="ZOV@example.ru"
+            />
+          </div>
+
+          <div class="form-field form-field--wide">
+            <label for="course">Направление *</label>
+            <select id="course" name="course" required>
+              <option value="">Выберите куда депать</option>
+              <option value="html">за мелстроя</option>
+              <option value="git">за клодика любимого</option>
+              <option value="project">контракт</option>
+            </select>
+          </div>
+
+          <fieldset class="form-field form-field--wide">
+            <legend>Формат участия</legend>
+            <label class="choice"
+              ><input type="radio" name="format" value="class" checked />
+              военкомат</label
+            >
+            <label class="choice"
+              ><input type="radio" name="format" value="online" />
+              госуслуги\макс</label
+            >
+          </fieldset>
+          <fieldset class="form-field form-field--wide">
+            <legend>Уровень подготовки</legend>
+            <label class="choice"
+              ><input type="radio" name="level" value="beginner" checked />
+              навальный</label
+            >
+            <label class="choice"
+              ><input type="radio" name="level" value="intermediate" /> +аура
+              комикон</label
+            >
+            <label class="choice"
+              ><input type="radio" name="level" value="advanced" />
+              движуха</label
+            >
+          </fieldset>
+
+          <div class="form-field">
+            <label for="start-date">Дата срока *</label>
+
+            <input id="start-date" name="start-date" type="date" required />
+          </div>
+
+          <div class="form-field form-field--wide">
             <label class="choice agreement">
-              <input type="checkbox" name="agreement" required>
-              Я проверил введённые данные *
+              <input type="checkbox" name="reminders" />
+              Я хочу получать повестку на почту
             </label>
           </div>
-      
-          <div class="form-actions">
-            <button type="submit">платить налоги</button>
-            <button type="button" disabled>не платить налоги</button>
-            <button type="reset" class="button-secondary">отказано</button>
+          <div class="form-field form-field--wide">
+            <label for="comment">Комментарий</label>
+            <textarea
+              id="comment"
+              name="comment"
+              rows="5"
+              maxlength="500"
+            ></textarea>
           </div>
-        </form>
-        
-      </main>
-      
-      <footer class="page-footer">
-        <p>
-          Авторы: Лебедев Антон и Григорьев Александр. Учебная практика УП. 09.
-        </p>
-      </footer>
-      
-</body>
+
+          <label class="choice agreement">
+            <input type="checkbox" name="agreement" required />
+            Я проверил введённые данные *
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit">платить налоги</button>
+          <button type="button" disabled>не платить налоги</button>
+          <button type="reset" class="button-secondary">отказано</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <p>
+        Авторы: Лебедев Антон и Григорьев Александр. Учебная практика УП. 09.
+      </p>
+    </footer>
+  </body>
 </html>
