@@ -2,8 +2,7 @@ console.log("DOM подключён");
 
 // Задача 1. Изменение текста
 const mainTitle = document.querySelector("#main-title"); // присваивает значение <h1 id="main-title">Изучаем JavaScript DOM</h1>
-mainTitle.textContent =
-  "Практическая работа --- Лебедев антон и Григорьев Александр"; // меняет заголовок на Моя первая работа с DOM
+mainTitle.textContent ="Практическая работа --- Лебедев антон и Григорьев Александр"; // меняет заголовок на Моя первая работа с DOM
 
 const message = document.querySelector("#message"); // через #message присваивает значение const message
 message.textContent = "Теперь я умею менять содержимое страницы!"; // меняет текст на Теперь я умею менять содержимое страницы!
