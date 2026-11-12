@@ -14,12 +14,14 @@ if (Number.isNaN(userNumber)) {
   console.log(userNumber + ' - нечётное');
 }*/
 
+//задача 1
 console.log("Имя: " + fullName);
 console.log(`Группа: ${group}, страниц на сайте: ${pagesCount}`);
 pagesCount = pagesCount + 1;
 console.log(`После доработки страниц: ${pagesCount}`);
 console.log("Студент:", isStudent);
 
+//задача 2
 console.log(typeof 42);
 console.log(typeof "текст");
 console.log(typeof true);
@@ -31,6 +33,7 @@ console.log(5 + 5);
 console.log(Number("12") + 3);
 console.log(Number("abc"));
 
+//задача 3
 const width = 8;
 const height = 5;
 console.log("Площадь:", width * height);
@@ -47,6 +50,7 @@ const hours = Math.floor(totalMinutes / 60);
 const minutes = totalMinutes % 60;
 console.log(`${totalMinutes} минут = ${hours} ч ${minutes} мин`);
 
+//самостоятельная задача 3
 const price = 1200;
 const discountPercent = 15;
 const discountAmount = price * (discountPercent / 100);
@@ -54,6 +58,7 @@ const finalPrice = price - discountAmount;
 console.log(`Размер скидки: ${discountAmount} руб.`);
 console.log(`Цена со скидкой: ${finalPrice} руб.`);
 
+//задача 4
 const city = " Чебупиццы ";
 console.log(city.length);
 console.log(city.trim());
@@ -72,6 +77,7 @@ console.log("Первые пять символов:", myPhrase.slice(0, 5));
 console.log("Фраза заглавными:", myPhrase.toUpperCase());
 console.log('Есть ли слово "burmalda":', myPhrase.includes("burmalda"));
 
+//задача 5
 const number = 17;
 
 if (number % 2 === 0) {
@@ -88,6 +94,7 @@ if (number > 0) {
   console.log("Ноль");
 }
 
+//задача 6
 const score = 78;
 let mark;
 
@@ -110,6 +117,7 @@ if (mark !== undefined) {
 console.log(5 === "5");
 console.log(5 == "5");
 
+//задача 7
 const dayNumber = 3;
 let dayName;
 
@@ -173,6 +181,7 @@ switch (monthNumber) {
 }
 console.log(`Месяц ${monthNumber} — время года: ${season}`);
 
+//задача 8
 for (let i = 1; i <= 10; i++) {
   console.log(`7 * ${i} = ${7 * i}`);
 }
@@ -198,6 +207,8 @@ console.log(`Таблица умножения на ${luckyNumber}:`);
 for (let i = 1; i <= 10; i++) {
   console.log(`${luckyNumber} * ${i} = ${luckyNumber * i}`);
 }
+
+//задача 9
 function greet(name) {
   return `Привет, ${name}!`;
 }
@@ -220,6 +231,7 @@ function test() {
 }
 test();
 
+//задача 10
 const square = (x) => x * x;
 const celsiusToFahrenheit = (c) => (c * 9) / 5 + 32;
 const addNumbers = (a, b) => a + b;
@@ -227,3 +239,94 @@ const addNumbers = (a, b) => a + b;
 console.log(square(7));
 console.log(celsiusToFahrenheit(20));
 console.log(addNumbers(2, 3));
+
+const rectangleArea2 = (width, height) => width * height;
+const isEven2 = (number) => number % 2 === 0;
+
+//задача 10-самостоятельная
+console.log("Площадь 5x4:", rectangleArea2(5, 4));
+console.log("Чётное ли 10:", isEven2(10));
+console.log("Чётное ли 7:", isEven2(7));
+
+//задача 11
+const subjects = ["Математика", "Информатика", "Физика"];
+console.log(subjects.length);
+console.log(subjects[0]);
+console.log(subjects[subjects.length - 1]);
+
+subjects.push("История");
+console.log(subjects);
+const removed = subjects.pop();
+console.log("Удалили:", removed);
+
+for (const subject of subjects) {
+  console.log("Предмет: " + subject);
+}
+
+const grades = [5, 4, 3, 5, 4];
+
+function getAverage(list) {
+  let total = 0;
+  for (const value of list) {
+    total += value;
+  }
+  return total / list.length;
+}
+console.log("Средняя оценка:", getAverage(grades).toFixed(2));
+
+let best = grades[0];
+for (const value of grades) {
+  if (value > best) {
+    best = value;
+  }
+}
+console.log("Лучшая оценка:", best);
+
+let worst = grades[0];
+for (const value of grades) {
+  if (value < worst) {
+    worst = value;
+  }
+}
+console.log("Худшая оценка:", worst);
+
+const numbers = [3, 8, 12, 5, 20, 1];
+const doubled = numbers.map((x) => x * 2);
+const big = numbers.filter((x) => x > 5);
+console.log(doubled);
+console.log(big);
+console.log(numbers);
+
+const names = ["Анна", "Борис", "Алексей", "Вера"];
+const startsWithA = names.filter((item) => item.startsWith("А"));
+console.log(startsWithA.join(", "));
+const upperNames = names.map((item) => item.toUpperCase());
+console.log(upperNames);
+
+const goodGrades = grades.filter((grade) => grade >= 4);
+console.log("Количество оценок 4 и выше:", goodGrades.length);
+
+const lengths = subjects.map((item) => item.length);
+console.log("Длины названий предметов:", lengths);
+
+// Самостоятельная часть пары 24
+function analyzeGrades(list) {
+  const count = list.length;
+  const average = getAverage(list);
+  const maxGrade = Math.max(...list);
+  const minGrade = Math.min(...list);
+  const twosCount = list.filter((grade) => grade === 2).length;
+  
+  const status = (average >= 3.5 && twosCount === 0) ? 'Зачёт' : 'Незачёт';
+
+  console.log(`Количество оценок: ${count}`);
+  console.log(`Средний балл: ${average.toFixed(2)}`);
+  console.log(`Лучшая оценка: ${maxGrade}, худшая оценка: ${minGrade}`);
+  console.log(`Итог: ${status}`);
+}
+
+console.log('--- Проверка 1 ---');
+analyzeGrades([5, 4, 5, 4, 5]);
+
+console.log('--- Проверка 2 ---');
+analyzeGrades([3, 2, 4, 3, 3]);

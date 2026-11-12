@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Самостоятельная DOM</title>
+    <script src="js/dom.js" defer></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      #course-info {
+        background-color: #f4f7f9;
+        border: 2px solid #4a76a8;
+        border-radius: 8px;
+        padding: 15px 20px;
+        max-width: 450px;
+        margin-top: 30px;
+      }
+
+      .completed {
+        color: green;
+        font-weight: bold;
+        background-color: #e6ffe6;
+        padding: 8px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Лаборатория JavaScript DOM</h1>
+    <p>Основное содержимое страницы...</p>
+
+    <div id="course-info">
+      <h2>Информация о курсе</h2>
+      <p id="discipline"></p>
+      <p id="student"></p>
+      <p id="group"></p>
+      <p id="topics-count"></p>
+      <p id="final-message"></p>
+    </div>
+    <script>
+      const disciplineName =
+        "Информационные системы и программирование (09.02.07)";
+      const studentFullName = "Лебедев Антон и Григорьев Александр";
+      const groupNumber = "ИС-1-25";
+      const studiedTopics = 4;
+
+      document.querySelector(
+        "#discipline"
+      ).textContent = `Дисциплина: ${disciplineName}`;
+      document.querySelector(
+        "#student"
+      ).textContent = `Студент: ${studentFullName}`;
+      document.querySelector("#group").textContent = `Группа: ${groupNumber}`;
+      document.querySelector(
+        "#topics-count"
+      ).textContent = `Количество изученных тем JavaScript: ${studiedTopics}`;
+
+      const finalMessageEl = document.querySelector("#final-message");
+      finalMessageEl.textContent = "Практическая работа завершена";
+      finalMessageEl.classList.add("completed");
+    </script>
+  </body>
+</html>
