@@ -36,6 +36,7 @@ minusBtn.addEventListener('click', function () {
 });
 
 resetBtn.addEventListener('click', function () {
+    count = 0;
   counter.textContent = count;
 });
 
@@ -73,18 +74,24 @@ colorBtn.addEventListener('click', function () {
 
 const feedbackForm = document.querySelector('#feedback-form');
 const feedbackName = document.querySelector('#feedback-name');
+const feedbackNumber = document.querySelector('#feedback-number');
 const formResult = document.querySelector('#form-result');
 
 feedbackForm.addEventListener('submit', function (event) {
   event.preventDefault();
 
   const userName = feedbackName.value.trim();
+  const numberValue = feedbackNumber.value.trim();
+  const number = Number(numberValue);
 
   if (userName === '') {
     formResult.textContent = 'Ошибка: введите имя';
     formResult.style.color = 'red';
+  } else if (numberValue === '' || Number.isNaN(number) || number < 1 || number > 100) {
+    formResult.textContent = 'Ошибка: некоректный возраст.';
+    formResult.style.color = 'red';
   } else {
-    formResult.textContent = `Спасибо, ${userName}! Данные проверены.`;
+    formResult.textContent = `Спасибо, ${userName}! Вам ${number}.`;
     formResult.style.color = 'green';
   }
 });
