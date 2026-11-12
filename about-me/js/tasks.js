@@ -118,7 +118,7 @@ console.log(5 === "5");
 console.log(5 == "5");
 
 //задача 7
-const dayNumber = 3;
+const dayNumber = 4;
 let dayName;
 
 switch (dayNumber) {
@@ -151,6 +151,9 @@ console.log(`День ${dayNumber}: ${dayName}`);
 
 const isWeekend = dayNumber === 6 || dayNumber === 7;
 console.log("Выходной:", isWeekend);
+
+const isbudny = dayNumber === 1 || dayNumber === 2 || dayNumber === 3 || dayNumber === 4 || dayNumber === 5;
+console.log("Будний день:", isbudny);
 
 const monthNumber = 11;
 let season;
