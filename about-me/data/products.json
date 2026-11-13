@@ -1,0 +1,22 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "Смартфон iphone duo",
+        "description": "Смартфон 2 экрана и световой меч внутри вподарок",
+        "price": 29999999999999,
+        "rating": 4.2,
+        "category": "smartfoni",
+        "thumbnail": "https://placeholder.com"
+      },
+      {
+        "id": 2,
+        "title": "Ноутбук ProBook",
+        "description": "игровой ноутбук для новой гта 6",
+        "price": 1200,
+        "rating": 1.1,
+        "category": "nobububk",
+        "thumbnail": "https://placeholder.com"
+      }
+    ]
+  }

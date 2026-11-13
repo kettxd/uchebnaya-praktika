@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "Полковник Бустеренко",
+      "email": "SLAY@SLAU.com",
+      "phone": "+7 (942) 148-82-28",
+      "address": { "city": "Чебоксары" }
+    },
+    {
+      "id": 2,
+      "name": "максимка 10  лет",
+      "email": "asasinproegorkridbbra@yandex.com",
+      "phone": "+7 (967) 42-42-67",
+      "address": { "city": "Москва" }
+    },
+    {
+      "id": 3,
+      "name": "Артемий Лебедев",
+      "email": "arteme@mail.com",
+      "phone": "+7 (969) 777-42-42",
+      "address": { "city": "Кемерово" }
+    }
+  ]
