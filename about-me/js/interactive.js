@@ -30,13 +30,16 @@ addTaskBtn.addEventListener("click", function () {
 
   const li = document.createElement("li");
   li.textContent = taskText + " ";
+  
 
   const doneBtn = document.createElement("button");
   doneBtn.textContent = "Выполнено";
   doneBtn.addEventListener("click", function () {
     li.classList.toggle("completed");
+    li.style.color='green';
   });
   li.append(doneBtn);
+  
 
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "Удалить";
